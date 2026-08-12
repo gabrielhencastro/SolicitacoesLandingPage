@@ -1,0 +1,201 @@
+body {
+    font-family: 'Inter', sans-serif;
+    /* background: linear-gradient(180deg, #141414 0%, #1f1f1f 100%); */
+    background-color: #fff;
+    color: #fff;
+}
+
+/* Header */
+#main-header {
+    background: linear-gradient(135deg, #ff9700 0%, #ff6f00 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+/* Cards métricas */
+/* Estilo padrão (desktop/tablet) */
+.card-metric {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 20px 30px;
+    width: 180px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.card-metric .counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card-metric p {
+    font-size: 1rem;
+}
+
+/* Cards métricas */
+/* para celular */
+@media (max-width: 576px) {
+    .card-metric {
+        padding: 10px 15px;  
+        max-width: 140px;     
+        border-radius: 12px;
+    }
+
+    .card-metric .counter {
+        font-size: 1.6rem;    
+    }
+
+    .card-metric p {
+        font-size: 0.8rem;    
+    }
+}
+
+
+.card-metric:hover { transform: translateY(-5px); }
+.card-metric .counter {
+    font-size: 2.3rem;
+    font-weight: 700;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Intro */
+.intro-section{
+  max-width: 890px;
+}
+.title-css { color: #ff9700; font-weight: 700; }
+.subtitle-css { color: #1a1a1a; }
+
+/* Logo */
+.logo-img { max-width: 160px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)); }
+
+/* Carrossel */
+.carousel-wrapper { max-width: 850px; margin: 40px auto; }
+.carousel-item { height: clamp(320px, 45vh, 420px); }
+.carousel-item img { height: 100%; object-fit: cover; }
+.carousel-caption h5 { background: rgba(0,0,0,0.5); padding: 8px 12px; border-radius: 8px; }
+
+/* Botões carrossel */
+.carousel-control-prev, .carousel-control-next {
+    width: 48px; height: 48px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    top: 50%; transform: translateY(-50%);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(1); }
+
+/* Fade-in */
+.fade-in { opacity: 0; transform: translateY(-15px); animation: fadeInUp 0.8s ease-out forwards; }
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+/* Seção Tecnologias */
+.tech-section {
+  margin-top: 60px;
+}
+
+.tech-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  min-height: 140px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.15);
+}
+
+.tech-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tech-card h5 {
+  color: #ff9700;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tech-card p {
+  color: #4e4e4e;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.img-card{
+    width: 100px;
+}
+
+/* Seção Repositórios */
+.repo-section {
+  margin-top: 60px;
+}
+
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  width: 160px;
+  height: 120px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+  color: #000000;
+}
+
+.repo-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.15);
+}
+
+.repo-card i {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.repo-card span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+/* Rodapé */
+.footer {
+  background: linear-gradient(180deg, #1f1f1f 0%, #141414 100%);
+  color: #bebebe;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .social-icons a {
+  color: #ff9700;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #fff;
+}
