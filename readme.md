@@ -1,33 +1,36 @@
-#  Landing Page — Projeto Solicitações
+# Landing Page — Solicitações Project
 
-A Landing Page do **Projeto Solicitações** foi desenvolvida para apresentar a ecossistema da aplicação aos usuários de forma clara, moderna e totalmente responsiva. Ela serve como portal principal para entender o projeto e acessar seus componentes.
-
----
-
-## Hospedagem no Github
-
-Para ver a pagína agora mesmo, acesse:
-[gabrielhencastro.github.io/SolicitacoesLandingPage](https://gabrielhencastro.github.io/SolicitacoesLandingPage) 
-
-## Tecnologias Utilizadas
-
-- **HTML5 & CSS3:** Estruturação semântica e estilização customizada.
-- **JavaScript (ES6+):** Interatividade e comportamento dinâmico (nativo do bootstrap e uma seção de animações).
-- **Bootstrap 5:** Framework para um layout responsivo.
+The Landing Page of the **Solicitações Project** was developed to present the ecosystem of the application to users in a clear, modern, and fully responsive way. It serves as the main portal to understand the project and access its components.
 
 ---
 
-## Repositórios relacionados
+## Hosting on GitHub
 
-| Componente | Descrição | Repositório |
+To view the page right now, visit:  
+https://gabrielhencastro.github.io/SolicitacoesLandingPage
+
+---
+
+## Technologies Used
+
+- **HTML5 & CSS3:** Semantic structuring and custom styling.  
+- **JavaScript (ES6+):** Interactivity and dynamic behavior (native Bootstrap plus an animation section).  
+- **Bootstrap 5:** Framework for a responsive layout.  
+
+---
+
+## Related Repositories
+
+| Component | Description | Repository |
 | :--- | :--- | :--- |
-| **Backend** | API REST desenvolvida em Python/FastAPI | [SolicitacoesApi](https://github.com/gabrielhencastro/SolicitacoesApi) |
-| **Mobile** | Aplicativo móvel do sistema | [SolicitacoesApp](https://github.com/gabrielhencastro/SolicitacoesApp) |
+| **Backend** | REST API developed with Python/FastAPI | https://github.com/gabrielhencastro/SolicitacoesApi |
+| **Mobile** | Mobile application of the system | https://github.com/gabrielhencastro/SolicitacoesApp |
 
 ---
 
-## Como Executar Localmente
+## How to Run Locally
 
-1. Clone este repositório:
+1. Clone this repository:
    ```bash
    git clone https://github.com/gabrielhencastro/SolicitacoesLandingPage.git
+   ```
